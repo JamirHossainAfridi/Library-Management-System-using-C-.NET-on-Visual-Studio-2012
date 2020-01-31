@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Library_ManagmentModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Library_ManagmentEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="publications" EntityType="Library_ManagmentModel.publication" />
+  </EntityContainer>
+  <EntityType Name="publication">
+    <Key>
+      <PropertyRef Name="pname" />
+    </Key>
+    <Property Name="pname" Type="String" Nullable="false" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+</Schema>
